@@ -12,7 +12,9 @@ import { environment } from 'src/environments/environment';
 export class GithubFormComponent implements OnInit {
 username=new User("")
 repos=new Repository(0,0,0, 0,new Date(),"")
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) { 
+    this.repos=new Repository(0,0,0, 0,new Date(),"")
+  }
   
 
   

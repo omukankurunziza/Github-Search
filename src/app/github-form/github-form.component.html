@@ -5,7 +5,8 @@
                 <div class="form-group">
 
                     <label for="name">Username</label>
-                    <input type="text" required class="form-control" id="username"[(ngModel)]="newusername.username" name="username">
+                    
+                    <input type="text" [(ngModel)]="username.username" id="username" name="name">
 
                 </div>
                 <button type="submit" class="btn btn-success btn-lg">Search</button>
@@ -21,7 +22,7 @@
                     public_gists:{{repos.public_gists}}<br>
                     created_at:{{repos.created_at}}<br>
                 </div>
-                <a href="{{repos.html_url}}">View Repositories</a>
+                <a href="{{repos.html_url}}">Link to Github</a>
         </div>  
   </div>
 </div>
