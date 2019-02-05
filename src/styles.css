@@ -1,2 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+#title{text-align: center;
+    
+}
+.jumbotron{
+    
+    background-color: #cccccc;
+    
+}
+
+ body{background-color: bisque;
+font-family: 'Times New Roman', Times, serif;
+font-size: 24px;
+}   
