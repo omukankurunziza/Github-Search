@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http'
 
 import { GithubFormComponent } from './github-form/github-form.component';
+import { StrikethroughDirective } from './strikethrough.directive';
 
 
 @NgModule({
@@ -13,6 +14,8 @@ import { GithubFormComponent } from './github-form/github-form.component';
     AppComponent,
     
     GithubFormComponent,
+    
+    StrikethroughDirective,
     
     
   ],
