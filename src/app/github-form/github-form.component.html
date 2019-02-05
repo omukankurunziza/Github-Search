@@ -1,16 +1,13 @@
 <div class="container-fluid">
   <div class="row">
-      <form id='form-id'>
-          <img src="images/oppo.jpg"  height="100"
-          weight="100"alt="profile-photo">
-          <br>
+      <form (ngSubmit)='check()'>
           <div class="form-group">
 
               <label for="name">Username</label>
-              <input type="text" required class="form-control" id="name">
+              <input type="text" required class="form-control" id="username"[(ngModel)]="newusername.username" name="username">
 
           </div>
-          <a href="#"onclick="document.getElementById('form-id')">Submit</a> 
+          <button type="submit" class="btn btn-success btn-lg">Search</button>
           
       </form>
   </div>

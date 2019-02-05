@@ -3,10 +3,9 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HttpClientModule} from '@angular/common/http'
 
 import { GithubFormComponent } from './github-form/github-form.component';
-import { RepoComponent } from './repo/repo.component';
-import { GithubComponent } from './github/github.component';
 
 @NgModule({
   declarations: [
@@ -14,14 +13,13 @@ import { GithubComponent } from './github/github.component';
     
     GithubFormComponent,
     
-    RepoComponent,
     
-    GithubComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
