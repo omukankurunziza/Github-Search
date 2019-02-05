@@ -7,6 +7,7 @@ import {HttpClientModule} from '@angular/common/http'
 
 import { GithubFormComponent } from './github-form/github-form.component';
 import { StrikethroughDirective } from './strikethrough.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 
 @NgModule({
@@ -16,6 +17,8 @@ import { StrikethroughDirective } from './strikethrough.directive';
     GithubFormComponent,
     
     StrikethroughDirective,
+    
+    DateCountPipe,
     
     
   ],

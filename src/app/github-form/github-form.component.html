@@ -31,7 +31,7 @@
                     followers:{{repos.following}}<br>
                     public_gists:{{repos.public_gists}}<br>
                     <div id="fol" appStrikethrough>created_at:{{repos.created_at}}</div>
-                    
+                    <p>This work will be completed in {{repos.created_at|dateCount}} days</p>
                 </div>
                 <a href="{{repos.html_url}}">Link to Github</a>
         </div>  
