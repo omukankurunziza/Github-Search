@@ -2,6 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 #title{text-align: center;
     
+    
 }
 .jumbotron{
     
@@ -12,4 +13,5 @@
  body{background-color: bisque;
 font-family: 'Times New Roman', Times, serif;
 font-size: 24px;
-}   
+} 
+#result p{color:blue;}  
