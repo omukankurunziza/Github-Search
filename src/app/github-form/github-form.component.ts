@@ -23,7 +23,6 @@ repos=new Repository(0,0,0, 0,new Date(),"")
     followers:number
     following:number
     created_at:Date
-
     html_url:string
 }
 this.http.get<ApiResponse>("https://api.github.com/users/"+

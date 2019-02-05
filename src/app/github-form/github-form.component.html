@@ -1,15 +1,28 @@
 <div class="container-fluid">
   <div class="row">
-      <form (ngSubmit)='check()'>
-          <div class="form-group">
+        <div class="col-md-6">
+            <form (ngSubmit)="check()">
+                <div class="form-group">
 
-              <label for="name">Username</label>
-              <input type="text" required class="form-control" id="username"[(ngModel)]="newusername.username" name="username">
+                    <label for="name">Username</label>
+                    <input type="text" required class="form-control" id="username"[(ngModel)]="newusername.username" name="username">
 
-          </div>
-          <button type="submit" class="btn btn-success btn-lg">Search</button>
+                </div>
+                <button type="submit" class="btn btn-success btn-lg">Search</button>
           
-      </form>
+            </form>
+        </div>
+        <div class="col-md-6">
+
+                <div id="result">
+                    public_repos:{{repos.public_repos}}<br>
+                    followers:{{repos.followers}}<br>
+                    followers:{{repos.following}}<br>
+                    public_gists:{{repos.public_gists}}<br>
+                    created_at:{{repos.created_at}}<br>
+                </div>
+                <a href="{{repos.html_url}}">View Repositories</a>
+        </div>  
   </div>
 </div>
 
