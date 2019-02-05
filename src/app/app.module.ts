@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { GithubFormComponent } from './github-form/github-form.component';
+import { RepoComponent } from './repo/repo.component';
+import { GithubComponent } from './github/github.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     
-    GithubFormComponent
+    GithubFormComponent,
+    
+    RepoComponent,
+    
+    GithubComponent
   ],
   imports: [
     BrowserModule,
