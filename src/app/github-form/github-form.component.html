@@ -25,13 +25,13 @@
         <div class="col-md-6">
 
                 <div id="result">
-                    profile picture<br><img src="{{repos.avatar_url}}" width="100px" height="100px"><br>
+                    <strong>profile picture</strong><br><img src="{{repos.avatar_url}}" width="100px" height="100px"><br>
 
                     public_repos:{{repos.public_repos}}<br>
                     followers:{{repos.followers}}<br>
                     following:{{repos.following}}<br>
                     public_gists:{{repos.public_gists}}<br>
-                    <div id="fol" appStrikethrough>created_at:{{repos.created_at|dateCount}}</div>
+                    <div id="fol" appStrikethrough>created_at:{{repos.created_at}}</div>
                     
                    
                 </div>
