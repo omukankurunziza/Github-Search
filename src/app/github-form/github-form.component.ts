@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
 import { User } from '../user';
 import { Repository } from '../repository';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-github-form',
@@ -28,12 +28,13 @@ repos=new Repository(0,0,0, 0,new Date(),"")
     html_url:string
 }
 this.http.get<ApiResponse>("https://api.github.com/users/"+
-this.username.username+"?access_token=" +environment.api_key).subscribe(data=>{
+this.username.username+"?access_token=" +environment.api_key).subscribe((data:any)=>{
     this.repos.public_repos=data.public_repos;
     this.repos.public_gists=data.public_gists;
     this.repos.followers=data.followers;
     this.repos.following=data.following;
-    this.repos.created_at=data.created_at,data.html_url;
+    this.repos.created_at=data.created_at;
+    this.repos.html_url =data.html_url;
 });
 console.log(this.repos);
   }
