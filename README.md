@@ -9,7 +9,7 @@ There are no installation requirments needed... with your web browser you can be
 
 
 link to live site on GitHub pages
-https://omukankurunziza.github.io/Quotes/
+## https://omukankurunziza.github.io/Github-Search/
 
 ## BDD
 The Github Search website is application where user can enter his or her username on github and the application will display her or his number of repository,followers,followings,date of creating this github account and the link direct you excatly to his or her github account
@@ -20,7 +20,6 @@ The Github Search website is application where user can enter his or her usernam
 * CSS
 * Bootstrap
 * JavaScript/Typescript
-* jQuery
 * Git
 * Angular Cli
 ## Fell free to contact me on :
