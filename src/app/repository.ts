@@ -4,5 +4,6 @@ export class Repository {
         public followers:number,
         public following:number,
         public created_at:Date,
-        public html_url:string ) {}
+        public html_url:string,
+        public avatar_url:string ) {}
 }

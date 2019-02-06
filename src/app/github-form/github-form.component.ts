@@ -11,9 +11,9 @@ import { environment } from '../../environments/environment';
 })
 export class GithubFormComponent implements OnInit {
 username=new User("")
-repos=new Repository(0,0,0, 0,new Date(),"")
+repos=new Repository(0,0,0, 0,new Date(),"","")
   constructor(private http:HttpClient) { 
-    this.repos=new Repository(0,0,0, 0,new Date(),"")
+    this.repos=new Repository(0,0,0, 0,new Date(),"","")
   }
   
 
@@ -26,6 +26,7 @@ repos=new Repository(0,0,0, 0,new Date(),"")
     following:number
     created_at:Date
     html_url:string
+    avatar_url:string
 }
 this.http.get<ApiResponse>("https://api.github.com/users/"+
 this.username.username+"?access_token=" +environment.api_key).subscribe((data:any)=>{
@@ -35,6 +36,7 @@ this.username.username+"?access_token=" +environment.api_key).subscribe((data:an
     this.repos.following=data.following;
     this.repos.created_at=data.created_at;
     this.repos.html_url =data.html_url;
+    this.repos.avatar_url=data.avatar_url;
 });
 console.log(this.repos);
   }
