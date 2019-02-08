@@ -29,7 +29,7 @@ repos=new Repository(0,0,0, 0,new Date(),"","")
     avatar_url:string
 }
 this.http.get<ApiResponse>("https://api.github.com/users/"+
-this.username+"?access_token=f9dfd6148d036fe080e975ad71f81b01b9e2d28b").subscribe((data:any)=>{
+this.username+"?access_token=87e623c05ce7d193bfab337715b6d58433e6ecd4").subscribe((data:any)=>{
     this.repos.public_repos=data.public_repos;
     this.repos.public_gists=data.public_gists;
     this.repos.followers=data.followers;
