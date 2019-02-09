@@ -60280,7 +60280,7 @@ var GithubFormComponent = /** @class */ /*@__PURE__*/ (function () {
     GithubFormComponent.prototype.check = function () {
         var _this = this;
         this.http.get("https://api.github.com/users/" +
-            this.username + "?access_token=f9dfd6148d036fe080e975ad71f81b01b9e2d28b").subscribe(function (data) {
+            this.username.username + "?access_token=884985e727498f240c979aa8ba4f87b9ad8028ab").subscribe(function (data) {
             _this.repos.public_repos = data.public_repos;
             _this.repos.public_gists = data.public_gists;
             _this.repos.followers = data.followers;
